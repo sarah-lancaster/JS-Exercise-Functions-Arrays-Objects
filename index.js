@@ -135,12 +135,18 @@ function makePersonObject(I, N, E) {
 const person = {
   id: 7,
   name: "Sarah",
-  email: "sarah@sarah.com"
+  email: "sarah@sarah.com",
 }
 
-function getName(/* code here */) {
-  /* code here */
+function getName(N){
+  console.log(N.name);
 }
+
+
+// function similar to return email
+// function getName(E){
+//   console.log(E.email);
+// }
 
 
 /**
@@ -158,9 +164,33 @@ function getName(/* code here */) {
  * passing in [ 'orange', 'grape', 'apple', 'banana', 'mango' ] as the argument,
  * the returned value should be: 2.
 */
-function appleIndex(/* code here */) {
-  /* code here */
+
+const fruit = [ 'orange', 'grape', 'apple', 'banana', 'mango' ]
+
+function appleIndex(A) {
+  let A = fruit.indexOf(apple);
+  console.log
+  
+  }
 }
+let index = 0;
+for (index in array){
+  console.log(array[index]);
+  index++;
+}
+
+
+// const paragraph = 'The quick brown fox jumps over the lazy dog. If the dog barked, was it really lazy?';
+
+// const searchTerm = 'dog';
+// const indexOfFirst = paragraph.indexOf(searchTerm);
+
+// console.log(`The index of the first "${searchTerm}" from the beginning is ${indexOfFirst}`);
+// // expected output: "The index of the first "dog" from the beginning is 40"
+
+// console.log(`The index of the 2nd "${searchTerm}" is ${paragraph.indexOf(searchTerm, (indexOfFirst + 1))}`);
+// // expected output: "The index of the 2nd "dog" is 52"
+
 
 /**
  * ### Challenge `isItAnApple`
