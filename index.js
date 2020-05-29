@@ -79,19 +79,19 @@ function temperatureCtoF(C) {
  * Hint: You can call your `temperatureCtoF` function from inside `temperatureInF`.
 */
 
-// function temperatureInF( N, U){
-//   var number = N;
+function temperatureInF( N, D) {
+  var temperature = N;
+  var degree = D;
+  if(D === 2){
+    let fahrenheit = Math.round(N*9/5 + 32);
+    console.log(`${fahrenheit}F`);
+  }else if(D === 1){
+    console.log( `${N}F`);
+  }
+}
 
-// }
 
-// function temperatureInF( /* code here */ ) {
-//   var number = N;
-//   var unit = U;
-//   function temperatureCtoF(C) {
-//     var Celsius = C;
-//     let fahrenheit = Math.round(C*9/5 + 32);
-//     console.log(fahrenheit);
-//   }
+
 
 /**
  * ### Challenge `makePersonObject`
@@ -131,6 +131,13 @@ function makePersonObject(I, N, E) {
  * passing { id: 1, name: 'Leia', email: 'leia@leia.com` } as the argument,
  * the returned value should look like `Hello, my name is Leia`.
 */
+
+const person = {
+  id: 7,
+  name: "Sarah",
+  email: "sarah@sarah.com"
+}
+
 function getName(/* code here */) {
   /* code here */
 }
@@ -224,12 +231,12 @@ function get3rdCar(inventory) {
  *     (2) a number which is the desired index in the array.
  * getCarInfoByIndex returns a string in the format `This is a {car_make} {car_model}`
  * 
- * For example, if getCarInfoByIndex is invoked with the inventory and the number 0,
- * it will return `This is a Lincoln Navigator`.
-*/
-function getCarInfoByIndex(inventory, index) {
-  /* code here */
-}
+//  * For example, if getCarInfoByIndex is invoked with the inventory and the number 0,
+//  * it will return `This is a Lincoln Navigator`.
+// */
+// function getCarInfoByIndex(inventory, index) {
+//   var
+
 
 /**
  * ### Challenge `getLastCarInfo`
@@ -242,9 +249,9 @@ function getCarInfoByIndex(inventory, index) {
  * For example, if getLastCarInfo is invoked passing the inventory inside /data/inventory.js,
  * it will return `This is a Lincoln Town Car`.
 */
-function getLastCarInfo(/* code here */) {
-  /* code here */
-}
+// function getLastCarInfo(/* code here */) {
+//   /* code here */
+// }
 
 /**
  * ### Challenge `getModelYears`
@@ -255,9 +262,9 @@ function getLastCarInfo(/* code here */) {
  *     (1) an array which is an inventory of cars like the one inside /data/inventory.js.
  * getModelYears returns an array containing all the 'car_year's in the inventory.
 */
-function getModelYears(/* code here */) {
-  /* code here */
-}
+// function getModelYears(/* code here */) {
+//   /* code here */
+// }
 
 /**
  * ### Challenge `getCarInfoById`
@@ -273,9 +280,9 @@ function getModelYears(/* code here */) {
  * For example, if getCarInfoById is invoked with the inventory and the number 1,
  * it will return `This is a Lincoln Navigator`.
 */
-function getCarInfoById(/* code here */) {
-  /* code here */
-}
+// function getCarInfoById(/* code here */) {
+//   /* code here */
+// }
 
 /**
  * ### Challenge `getOlderCars`
@@ -291,9 +298,9 @@ function getCarInfoById(/* code here */) {
  * with a `car_year` which is at most the given desired max year,
  * in the same order as they appear in the original inventory.
 */
-function getOlderCars(/* code here */) {
-  /* code here */
-}
+// function getOlderCars(/* code here */) {
+//   /* code here */
+// }
 
 /**
  * ### Challenge `getGermanCars`
@@ -308,9 +315,9 @@ function getOlderCars(/* code here */) {
  * made by either `Audi` or `Mercedes-Benz` or `Volkswagen` or `BMW`,
  * in the same order as they appear in the original inventory.
 */
-function getGermanCars(/* code here */) {
-  /* code here */
-}
+// function getGermanCars(/* code here */) {
+//   /* code here */
+// }
 
 /**
  * ### Challenge `carMaker`
@@ -325,7 +332,6 @@ function getGermanCars(/* code here */) {
  *         (1) causes the odometer in the object to be increased by the distance,
  *         (2) returns the updated value of the `odometer`.
 */
-function carMaker(/* code here */) {
-  /* code here */
-}
-
+// function carMaker(/* code here */) {
+//   /* code here */
+// }
