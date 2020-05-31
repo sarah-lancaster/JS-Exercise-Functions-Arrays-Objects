@@ -329,7 +329,6 @@ function getLastCarInfo(arr) {
   let last = arr[arr.length - 1];
   return `This is a ${last.car_make} ${last.car_model}`
 }
-
 /**
  * ### Challenge `getModelYears`
  * 
