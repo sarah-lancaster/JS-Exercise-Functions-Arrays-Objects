@@ -191,18 +191,31 @@ function appleIndex(fruit) {
  * the returned value should be: [ false, true, false, false, true, false ].
 */
 
-const fruits = ['orange', 'apple', 'banana', 'apples', 'apple', 'mango']
+const sam = ['orange', 'apple', 'banana', 'apples', 'apple', 'mango']
 
-function isItAnApple(fruits) {
-  for (let i = 0; i < fruits.length; i++) {
-    let type = fruits[i];
-    if (type === 'apple') {
-      return true;
+function isItAnApple(sam) {
+  for (let i = 0; i < sam.length; i++) {
+    let name = sam[i];
+    if (name === 'apple'){
+    console.log (true);
     } else {
-      return false;
+      console.log(false);
     }
   }
 }
+
+// function isItAnApple(fruits) {
+//   let i = 0; i < fruits.length; i++;
+//   console.log (fruits[i]);
+  // for (let i = 0; i < fruits.length; i++) {
+  //   let type = fruits[i];
+  //   if (type === 'apple') {
+  //     return true;
+  //   } else {
+  //     return false;
+  //   }
+  // }
+// }
 
 
 
