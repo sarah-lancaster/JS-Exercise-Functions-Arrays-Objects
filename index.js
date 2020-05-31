@@ -167,17 +167,11 @@ function getName(N){
 
 const fruit = [ 'orange', 'grape', 'apple', 'banana', 'mango' ]
 
-function appleIndex(A) {
-  let A = fruit.indexOf(apple);
-  console.log
-  
-  }
+function appleIndex(fruit) {
+  let a = fruit.indexOf('apple');
+  console.log(a);
 }
-let index = 0;
-for (index in array){
-  console.log(array[index]);
-  index++;
-}
+
 
 
 // const paragraph = 'The quick brown fox jumps over the lazy dog. If the dog barked, was it really lazy?';
