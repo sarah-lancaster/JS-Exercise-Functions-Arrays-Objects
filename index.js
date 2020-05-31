@@ -194,8 +194,13 @@ function appleIndex(fruit) {
 const fruits = ['orange', 'apple', 'banana', 'apples', 'apple', 'mango']
 
 function isItAnApple(fruits) {
-  for (let i = 0; i < 5; i++) {
-    console.log()
+  for (let i = 0; i < fruits.length; i++) {
+    let type = fruits[i];
+    if (type === 'apple') {
+      return true;
+    } else {
+      return false;
+    }
   }
 }
 
